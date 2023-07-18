@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('⚡ UᎮDΛTΞS ⚡', url='https://t.me/OTT_Updated')
+                InlineKeyboardButton('⚡ UᎮDΛTΞS ⚡', url='https://t.me/clawcinemas')
             ],
             [
-                InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url=f"https://youtube.com/@GreyMattersYT"),
+                InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url=f"https://t.me/clawcinemas"),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -47,11 +47,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/@GreyMattersYT'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/OTT_Updated')
+            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://t.me/clawcinemas'),
+            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/clawcinemas')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -93,11 +93,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/@GreyMattersYT'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/OTT_Updated')
+            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://t.me/clawcinemas'),
+            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/clawcinemas')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -247,7 +247,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://youtube.com/@GreyMattersYT') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://t.me/clawcinemas') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
